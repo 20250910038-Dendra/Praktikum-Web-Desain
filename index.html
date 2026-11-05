@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Latihan Web Desain</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --primary: #2d6cdf;
+      --primary-dark: #1f4ea3;
+      --text: #1d2433;
+      --muted: #697586;
+      --border: #dfe7f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #edf4ff 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 60px auto;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      text-align: center;
+      color: var(--primary-dark);
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 32px;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 18px;
+      box-shadow: 0 12px 24px rgba(31, 78, 163, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 28px rgba(31, 78, 163, 0.12);
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      color: var(--primary-dark);
+    }
+
+    .card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card a:hover {
+      background: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Latihan Web Desain</h1>
+    <p class="subtitle">Daftar halaman tugas HTML yang dibuat untuk pembelajaran materi dasar web desain.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Latihan 01</h2>
+        <p>Halaman sederhana dengan heading utama dan variasi judul.</p>
+        <a href="Latihan_01.htm">Buka halaman</a>
+      </article>
+
+      <article class="card">
+        <h2>Latihan 02</h2>
+        <p>Halaman biodata diri dengan format data personal yang rapi.</p>
+        <a href="Latihan_02.htm">Buka halaman</a>
+      </article>
+
+      <article class="card">
+        <h2>Latihan 03</h2>
+        <p>Halaman biodata keluarga dengan desain kotak modern dan latar belakang lembut.</p>
+        <a href="Latihan_03.htm">Buka halaman</a>
+      </article>
+
+      <article class="card">
+        <h2>Tugas Biodata Keluarga</h2>
+        <p>Versi utama biodata keluarga yang dilengkapi foto dan tabel informasi anggota keluarga.</p>
+        <a href="Tugas biodata keluarga.htm">Buka halaman</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
